@@ -1,0 +1,4 @@
+type RootQuery {
+    carbrand(id: ID!): CarBrand!
+    carbrands:[CarBrand!]!
+}

@@ -1,0 +1,19 @@
+type CarBrand {
+    id: ID!
+    brand_name: String!
+    year: Int!
+}
+
+input createCarBrand {
+    brand_name: String!
+    year: Int!
+}
+
+input updateCarBrand {
+    brand_name: String!
+    year: Int!
+}
+
+input deleteCarBrand {
+    id: ID!
+}
