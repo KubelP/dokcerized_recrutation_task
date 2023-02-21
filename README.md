@@ -12,10 +12,10 @@ For installation go to your directory and clone repository:
 $ git clone https://github.com/KubelP/dokcerized_recrutation_task.git
 ```
 
-Go to directory recrutation_task:
+Go to directory dokcerized_recrutation_task:
 
 ```bash
-$ cd recrutation_task
+$ cd dokcerized_recrutation_task/
 ```
 
 Set database in .env file (in recruraruon_task directory) as follows: 
@@ -100,7 +100,7 @@ For run tests again due to auto increment of primary key (id) in database, it is
 
 Examples of queries used in graphiql:
 
-```json
+```graphql
 mutation RootMutation {
     updateCarBrand(id:2, carbrand: {
         brand_name:"Bentley"
@@ -113,7 +113,7 @@ mutation RootMutation {
 }
 ```
 
-```json
+```graphql
 mutation RootMutation {
     createCarBrand(carbrand: {
         brand_name:"Maserati"
@@ -126,7 +126,7 @@ mutation RootMutation {
 }
 ```
 
-```json
+```graphql
 mutation RootMutation {
     deleteCarBrand(id:2) {
  	    id
@@ -134,7 +134,7 @@ mutation RootMutation {
 }
 ```
 
-```json
+```graphql
 query RootQuery {
     carbrand(id:1) {
         brand_name
