@@ -102,24 +102,11 @@ Examples of queries used in graphiql:
 
 ```graphql
 mutation RootMutation {
-    updateCarBrand(id:2, carbrand: {
-        brand_name:"Bentley"
-        year: 1919
-    }) {
-	    id
-        brand_name
-        year
-	}
-}
-```
-
-```graphql
-mutation RootMutation {
     createCarBrand(carbrand: {
         brand_name:"Maserati"
         year:1900
     }) {
- 	    id
+ 	id
         brand_name
         year
     }
@@ -128,8 +115,21 @@ mutation RootMutation {
 
 ```graphql
 mutation RootMutation {
+    updateCarBrand(id:2, carbrand: {
+        brand_name:"Bentley"
+        year: 1919
+    }) {
+	id
+        brand_name
+        year
+	}
+}
+```
+
+```graphql
+mutation RootMutation {
     deleteCarBrand(id:2) {
- 	    id
+ 	id
     }
 }
 ```
